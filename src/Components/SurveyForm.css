@@ -1,0 +1,369 @@
+/* Reset CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin: 0;
+    font-size: 0.875em;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.875em;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-header h1 {
+    margin: 0;
+}
+
+.form-header p {
+    margin: 0;
+    font-size: 0.875em;
+}
+
+.form-container h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container form {
+    margin-top: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"]+label {
+    display: inline;
+}
+
+.form-group input[type="radio"]:checked+label {
+    font-weight: bold;
+}
+
+.form-group input[type="radio"]+label,
+.form-group input[type="checkbox"]+label {
+    display: inline;
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"]:checked+label,
+.form-group input[type="checkbox"]:checked+label {
+    font-weight: bold;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"]+label {
+    display: inline;
+}
+
+.form-group input[type="radio"]:checked+label {
+    font-weight: bold;
+}
+
+.form-group input[type="radio"]+label,
+.form-group input[type="checkbox"]+label {
+    display: inline;
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"]:checked+label,
+.form-group input[type="checkbox"]:checked+label {
+    font-weight: bold;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+}
+
+.form-group input[type="text"]+span,
+.form-group input[type="email"]+span,
+.form-group input[type="number"]+span,
+.form-group textarea+span {
+    display: none;
+}
+
+.form-group input[type="text"].invalid,
+.form-group input[type="email"].invalid,
+.form-group input[type="number"].invalid,
+.form-group textarea.invalid {
+    border-color: red;
+}
+
+.form-group input[type="text"].invalid+span,
+.form-group input[type="email"].invalid+span,
+.form-group input[type="number"].invalid+span,
+.form-group textarea.invalid+span {
+    display: block;
+}
+
+.form-group span {
+    color: red;
+    font-size: 0.875em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: block;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"]+label {
+    display: inline;
+}
+
+.form-group input[type="radio"]:checked+label {
+    font-weight: bold;
+}
+
+.form-group input[type="radio"]+label,
+.form-group input[type="checkbox"]+label {
+    display: inline;
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"]:checked+label,
+.form-group input[type="checkbox"]:checked+label {
+    font-weight: bold;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.additional-questions {
+    margin-top: 20px;
+}
+
+.additional-questions label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.additional-questions input[type="checkbox"] {
+    margin: 0 10px 0 0;
+    margin-right: 10px;
+}
+
+.additional-questions input[type="checkbox"]+label {
+    font-weight: normal;
+    display: inline;
+    margin-right: 10px;
+}
+
+.additional-questions input[type="checkbox"]:checked+label {
+    font-weight: bold;
+}
